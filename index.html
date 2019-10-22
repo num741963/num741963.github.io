@@ -5,25 +5,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>菜菜</title>
+    <title>啾啾愛吃鬼</title>
+
     <style>
+        * {
+            margin: 0;
+        }
+
         .all {
             width: 100%;
             height: 100vh;
-            background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/2e/Prionailurus_bengalensis_in_Taiwan_01.jpg/800px-Prionailurus_bengalensis_in_Taiwan_01.jpg');
-            background-size: cover;
+            background-image: url('./img/all.jpg');
+            background-size: 100% 100%;
+            position: relative;
         }
 
         .title {
-            color: white;
-            font-size: 5em;
+            width: 30%;
+            height: 60%;
+            background-image: url('./img/jiujiu.jpg');
+            background-size: contain;
+            background-repeat: no-repeat;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
+
+        nav span {
+            width: 20%;
+            height: 10%;
+            color: lime;
+            font-size: 2em;
+            text-align: center;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
     </style>
+
 </head>
 
 <body>
     <div class="all">
-        <div class="title">lovely</div>
+        <div class="title"></div>
+        <nav>
+            <span>
+                涼涼的......
+            </span>
+        </nav>
     </div>
 </body>
 
