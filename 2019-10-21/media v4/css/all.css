@@ -1,0 +1,312 @@
+* {
+    margin: 0;
+}
+
+.all {
+    width: 100%;
+    height: 100vh;
+    background-image: url('https://www.publicdomainpictures.net/pictures/260000/velka/fenetre-et-rideaux-blancs-.jpg');
+    background-size: cover;
+    display: flex;
+
+}
+
+.left_up {
+    width: 20%;
+    height: 100%;
+    background-image: url('https://www.publicdomainpictures.net/pictures/290000/velka/cat-black-silhouette-1550762856qRB.jpg');
+    background-size: 100% 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    opacity: 0.6;
+}
+
+.right_bt {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 200px;
+    height: 200px;
+    background-image: url('https://cdn4.iconfinder.com/data/icons/abstract-ecology-flowers/512/1-512.png');
+    background-size: cover;
+}
+
+.menu {
+    display: flex;
+}
+
+ul li {
+    color: rgb(255, 112, 243);
+    text-shadow: 0.1em 0.1em 0.2em;
+    font-size: 2em;
+    font-family: 'Pacifico', cursive;
+    padding: 10px 0;
+    display: flex;
+    position: relative;
+    top: calc(100% / 2 - 150px);
+    left: calc(20% / 2 - 20px);
+}
+
+ul li a {
+    text-decoration: none;
+}
+
+ul li:hover {
+    font-size: 3em;
+}
+
+.leftpic {
+    width: 200px;
+    height: 60%;
+    background-image: url('https://www.stockvault.net/data/2011/04/12/121686/preview16.jpg');
+    background-size: cover;
+}
+
+.leftpic:hover {
+    height: 63%;
+    border-radius: 90%;
+}
+
+.middlepic {
+    width: 200px;
+    height: 60%;
+    background-image: url('https://s1.1zoom.me/big0/980/Coffee_Croissant_Honey_Buns_Strawberry_Cup_571361_1365x1024.jpg');
+    background-size: cover;
+}
+
+.middlepic:hover {
+    height: 63%;
+    border-radius: 90%;
+}
+
+.rightpic {
+    width: 200px;
+    height: 60%;
+    background-image: url('https://images.freeimages.com/images/large-previews/973/my-sleeping-tomcat-1455120.jpg');
+    background-size: cover;
+}
+
+.rightpic:hover {
+    height: 63%;
+    border-radius: 90%;
+}
+
+@media screen and (max-width: 1280px) {
+    .right_bt {
+        width: 80%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo {
+        width: 200px;
+        height: 200px;
+        background-image: url('https://cdn4.iconfinder.com/data/icons/abstract-ecology-flowers/512/1-512.png');
+        background-size: cover;
+    }
+
+    .menu {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .all {
+        width: 100%;
+        height: 100vh;
+        background-image: url('https://www.publicdomainpictures.net/pictures/260000/velka/fenetre-et-rideaux-blancs-.jpg');
+        background-size: cover;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+
+    .left_up {
+        width: 100%;
+        height: 20vh;
+        background-size: cover;
+        display: flex;
+
+    }
+
+    .right_bt {
+        width: 100%;
+        height: 80vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        top: calc(20% / 2);
+    }
+
+    .menuicon {
+        widows: 0;
+        height: 0;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    ul {
+        display: flex;
+        position: relative;
+        top: calc(20vh / 2 - 5vh);
+        left: calc(100% / 2 + 100px);
+    }
+
+    ul li {
+        color: rgb(255, 112, 243);
+        text-shadow: 0.1em 0.1em 0.2em;
+        font-size: 2em;
+        font-family: 'Pacifico', cursive;
+        padding: 0 20px;
+
+    }
+
+    ul li:hover {
+        font-size: 3em;
+    }
+
+    .leftpic {
+        width: 70%;
+        height: 40%;
+    }
+
+    .leftpic:hover {
+        width: 73%;
+        height: 43%;
+        border-radius: 90%;
+    }
+
+    .middlepic {
+        width: 35%;
+        height: 40%;
+    }
+
+    .middlepic:hover {
+        width: 38%;
+        height: 43%;
+        border-radius: 90%;
+    }
+
+    .rightpic {
+        width: 35%;
+        height: 40%;
+    }
+
+    .rightpic:hover {
+        width: 38%;
+        height: 43%;
+        border-radius: 90%;
+    }
+}
+
+@media screen and (max-width: 375px) {
+
+    .left_up {
+        width: 100%;
+        height: 20vh;
+        display: flex;
+    }
+
+    .right_bt {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .logo {
+        width: 100px;
+        height: 100px;
+        position: relative;
+        left: 0;
+    }
+
+    .menuicon {
+        width: 30px;
+        height: 30px;
+        background-image: url('https://image.flaticon.com/icons/png/512/660/660663.png');
+        background-size: cover;
+        position: relative;
+        left: calc(100% / 2 - 90%);
+        top: calc(20vh / 2 - 80%);
+    }
+
+    .menu {
+        display: none;
+
+    }
+
+    ul li {
+        color: rgb(255, 112, 243);
+        text-shadow: 0.1em 0.1em 0.2em;
+        font-size: 2em;
+        font-family: 'Pacifico', cursive;
+        display: flex;
+        /* flex-direction: column; */
+        /* flex-wrap: wrap; */
+        padding: 5px 10px 20px 0;
+
+        /* position: absolute;
+        top: -5%;
+        left: -5%; */
+        /* width: 10px; */
+        /* height: 150px; */
+    }
+
+    ul li:hover {
+        font-size: 3em;
+    }
+
+    .leftpic {
+        width: 100%;
+        height: 33%;
+    }
+
+    .leftpic:hover {
+        opacity: 0.9;
+        width: 100%;
+        height: 33%;
+        border-radius: 100%;
+    }
+
+    .middlepic {
+        width: 100%;
+        height: 34%;
+    }
+
+    .middlepic:hover {
+        opacity: 0.9;
+        width: 100%;
+        height: 34%;
+        border-radius: 100%;
+    }
+
+    .rightpic {
+        width: 100%;
+        height: 33%;
+    }
+
+    .rightpic:hover {
+        opacity: 0.9;
+        width: 100%;
+        height: 33%;
+        border-radius: 100%;
+    }
+}

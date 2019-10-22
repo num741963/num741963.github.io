@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="/2019-10-17-media_flex/mask.css">
+
+    <title>media_flex_hover練習</title>
+
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .body {
+            width: 1920px;
+            height: 1080px;
+            background-image: url('https://s1.1zoom.me/big0/78/Brown_Bears_Paws_Sitting_Funny_566175_1280x856.jpg');
+            background-size: cover;
+            display: flex;
+        }
+
+        .menuleft {
+            width: 20%;
+            height: 1080px;
+            background-image: url('');
+            background-color: cornflowerblue;
+        }
+
+        .logo {
+            width: 50px;
+            height: 50px;
+            background-color: chartreuse;
+            margin-left: 30%;
+            margin-top: 30%;
+            float: left;
+        }
+
+        .menugroup {
+            width: 100%;
+            height: 50%;
+            float: left;
+            margin-left: 15%;
+        }
+
+        nav ul li {
+            display: flex;
+            /* 消除點 */
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            /* 消除底線 */
+        }
+
+        .photoright {
+            width: 80%;
+            height: 1080px;
+            background-image: url('');
+            background-size: cover;
+        }
+
+        .photoall {
+            width: 1500px;
+            height: 900px;
+            align-items: center;
+            margin: 3% 10%;
+        }
+
+        .firstpic {
+            width: 33%;
+            height: 100%;
+            background-image: url('');
+            background-size: cover;
+            background-color: cadetblue;
+            float: left;
+        }
+
+        .secondpic {
+            width: 34%;
+            height: 100%;
+            background-image: url('');
+            background-size: cover;
+            background-color: rgb(110, 160, 95);
+            float: left;
+        }
+
+        .thirdpic {
+            width: 33%;
+            height: 100%;
+            background-image: url('');
+            background-size: cover;
+            background-color: rgb(149, 95, 160);
+            float: left;
+        }
+
+        @media screen and (max-width: 1280px) {
+            .body {
+                width: 1280px;
+                height: 1024px;
+            }
+
+            .photoright {
+                width: 100%;
+                height: 1024px;
+            }
+
+            .photoall {
+                width: 930px;
+                height: 900px;
+            }
+
+            .firstpic {
+                width: 100%;
+                height: 50%;
+            }
+
+            .secondpic {
+                width: 50%;
+                height: 50%;
+            }
+
+            .thirdpic {
+                width: 50%;
+                height: 50%;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .body {
+                width: 768px;
+                height: 1024px;
+            }
+
+            .menuleft {
+                width: 100%;
+                height: 120px;
+                float: top;
+            }
+
+            .logo {
+                margin-left: 3%;
+                margin-top: 3%;
+                float: left;
+            }
+
+            .photoright {
+                width: 100%;
+            }
+
+            .photoall {
+                width: 100%;
+                height: 900px;
+            }
+
+            .firstpic {
+                width: 100%;
+                height: 50%;
+            }
+
+            .secondpic {
+                width: 50%;
+                height: 50%;
+            }
+
+            .thirdpic {
+                width: 50%;
+                height: 50%;
+            }
+        }
+
+        @media screen and (max-width: 375px) {
+            .body {
+                width: 375px;
+                height: 677px;
+            }
+
+            .menuleft {
+                width: 100%;
+                height: 120px;
+                float: top;
+            }
+
+            .logo {
+                margin-left: 3%;
+                margin-top: 3%;
+            }
+
+            .menu {
+                display: none;
+            }
+
+            .photoright {
+                width: 100%;
+            }
+
+            .photoall {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+            }
+
+            .firstpic {
+                width: 100%;
+                height: 100%;
+            }
+
+            .secondpic {
+                width: 100%;
+                height: 100%;
+            }
+
+            .thirdpic {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="body">
+        <nav>
+            <div class="menuleft">
+                <div class="logo"></div>
+                <nav>
+                    <div class="menugroup">
+                        <ul class="menu">
+                            <li>
+                                <a href="#first">First</a>
+                            </li>
+                            <li>
+                                <a href="#second">Second</a>
+                            </li>
+                            <li>
+                                <a href="#third">Third</a>
+                            </li>
+                            <div class="clearfix"></div>
+                        </ul>
+                    </div>
+                </nav>
+
+            </div>
+        </nav>
+
+        <div class="photoright">
+            <div class="photoall">
+                <div class="firstpic">
+                    <div class="mask"></div>
+                </div>
+                <div class="secondpic">
+                    <div class="mask"></div>
+                </div>
+                <div class="thirdpic">
+                    <div class="mask"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <main>
+        <section id="first">
+            <div class="firstpic"></div>
+        </section>
+        <section id="second">
+            <div class="secondpic"></div>
+        </section>
+        <section id="third">
+            <div class="thirdpic"></div>
+        </section>
+    </main>
+</body>
+
+</html>

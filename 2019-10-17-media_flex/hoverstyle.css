@@ -1,0 +1,5 @@
+.hovertes:hover {
+    cursor: pointer;
+    /* 滑鼠移置上頭鼠標變小手 */
+transition: 0.5s;
+}

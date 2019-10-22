@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>media練習v3</title>
+
+    <link rel="stylesheet" href="/2019-10-17-media_flex/mask.css">
+
+    <style>
+        * {
+            margin: 0;
+        }
+
+        #all {
+            width: 1920px;
+            height: 1080vh;
+            margin: 0 auto;
+
+        }
+
+        #title {
+            width: 384px;
+            height: 100%;
+            background-color: darkgrey;
+            float: left;
+        }
+
+        #logo {
+            width: 50px;
+            height: 50px;
+            background-image: url('https://images.freeimages.com/images/large-previews/359/big-sale-1473638.jpg');
+            background-size: contain;
+            margin: 5% auto;
+        }
+
+        #menu {
+            width: 15%;
+            height: 30%;
+            display: flex;
+        }
+
+        #photo {
+            width: 80%;
+            height: 100%;
+            float: left;
+            display: flex;
+        }
+
+        #smallpic {
+            width: 1500px;
+            height: 900px;
+            margin: 5% auto;
+        }
+
+        #x {
+            width: 33%;
+            height: 100%;
+            float: left;
+            background-image: url('https://cdn.pixabay.com/photo/2017/05/25/08/30/cute-puppy-2342628_960_720.jpg');
+            background-size: 100% 100%;
+        }
+
+        #y {
+            width: 34%;
+            height: 100%;
+            float: left;
+            background-image: url('https://cdn.pixabay.com/photo/2019/06/29/06/15/cat-4305523_640.jpg');
+            background-size: cover;
+        }
+
+        #z {
+            width: 33%;
+            height: 100%;
+            float: left;
+            background-image: url('https://live.staticflickr.com/3686/10688032213_c5010f2057.jpg');
+            background-size: 100% 100%;
+        }
+
+        @media screen and (max-width: 1280px) {
+            #all {
+                width: 1280px;
+                height: 1024px;
+            }
+
+            #title {
+                width: 256px;
+            }
+
+            #smallpic {
+                width: 930px;
+                height: 900px;
+                margin: 5% 5%;
+            }
+
+            #x {
+                width: 100%;
+                height: 50%;
+                background-size: 100% 100%;
+            }
+
+            #y {
+                width: 50%;
+                height: 50%;
+            }
+
+            #z {
+                width: 50%;
+                height: 50%;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            #all {
+                width: 768px;
+                height: 1024px;
+            }
+
+            #title {
+                width: 100%;
+                height: 120px;
+                float: top;
+            }
+
+            #logo {
+                margin-top: 4%;
+                margin-left: 5%;
+                float: left;
+            }
+
+            .menu {
+                float: right;
+                display: flex;
+                justify-content: space-evenly;
+            }
+
+            .menu li {
+                line-height: 120px;
+                /* 垂直置中 */
+                margin-left: 30px;
+            }
+
+            #photo {
+                width: 100%;
+            }
+
+            #smallpic {
+                width: 100%;
+                height: 900px;
+                margin: 5% 2%;
+            }
+
+            #x {
+                width: 100%;
+                height: 50%;
+                background-size: 100% 100%;
+            }
+
+            #y {
+                width: 50%;
+                height: 50%;
+            }
+
+            #z {
+                width: 50%;
+                height: 50%;
+            }
+        }
+
+        @media screen and (max-width: 375px) {
+            #all {
+                width: 375px;
+                height: 667px;
+            }
+
+            #title {
+                width: 100%;
+                height: 120px;
+                float: top;
+            }
+
+            #logo {
+                margin-top: 10%;
+                margin-left: 43%;
+            }
+
+            .menu {
+                width: 25px;
+                height: 25px;
+                display: none;
+            }
+
+            .menubn {
+                width: 25px;
+                height: 25px;
+                background-color: deeppink;
+                position: absolute;
+                top: 30px;
+                left: 5%;
+            }
+
+            .menubn:hover .menu {
+                display: flex;
+            }
+
+            nav ul {
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                position: absolute;
+                top: 30px;
+                left: 1%;
+            }
+
+            nav ul li {
+                width: 55px;
+                height: 35px;
+                display: flex;
+                /* 消除點 */
+                align-items: center;
+                /* 上下置中 */
+                justify-content: center;
+                /* 左右置中 */
+                background-color: rgb(6, 51, 53);
+                color: white;
+
+            }
+
+            #photo {
+                width: 100%;
+                float: center;
+            }
+
+            #smallpic {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+            }
+
+            #x {
+                width: 100%;
+                height: 100%;
+            }
+
+            #y {
+                width: 100%;
+                height: 100%;
+            }
+
+            #z {
+                width: 100%;
+                height: 100%;
+                background-size: contain;
+                background-repeat: no-repeat;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="all">
+        <div id="title">
+            <div id="logo"></div>
+            <nav>
+                <div class="menubn">
+                    <ul class="menu">
+                        <li class="menu1">menu1</li>
+                        <li class="menu2">menu2</li>
+                        <li class="menu3">menu3</li>
+                    </ul>
+                </div>
+
+            </nav>
+
+
+        </div>
+
+        <div id="photo">
+            <div id="smallpic">
+                <div id="x">
+                    <div class="mask"></div>
+                </div>
+                <div id="y">
+                    <div class="mask"></div>
+                </div>
+                <div id="z">
+                    <div class="mask"></div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

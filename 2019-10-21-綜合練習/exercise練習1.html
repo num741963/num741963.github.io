@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>exercise練習1</title>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .all {
+            width: 100%;
+            height: 100vh;
+            background-image: url('https://images.freeimages.com/images/large-previews/678/flying-seagulls-over-the-lake-1639263.jpg');
+            background-size: cover;
+            display: flex;
+            /* flex-wrap: wrap; */
+            justify-content: center;
+            background-repeat: repeat;
+        }
+
+        .navbar {
+            width: 100%;
+            height: 20%;
+            background-image: url('https://images.freeimages.com/images/large-previews/9a7/grey-brick-wall-1637659.jpg');
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: fixed;
+            z-index: 2;
+        }
+
+        .logo {
+            width: 60px;
+            height: 60px;
+            background-image: url('https://image.flaticon.com/icons/png/512/2175/2175306.png');
+            background-size: cover;
+            margin-left: 10px;
+        }
+
+        nav ul li {
+            display: flex;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+        }
+
+        .linkgroup {
+            /* width: 300px;
+            height: 50px; */
+            display: flex;
+            /* justify-content: space-between; */
+            align-items: center;
+            color: white;
+            font-size: 2em;
+
+        }
+
+        .container {
+            width: 100%;
+            height: 75%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            position: relative;
+            top: 20%;
+        }
+
+        .imgandtext1 {
+            width: 80%;
+            height: 100%;
+            display: flex;
+            margin-top: 0%;
+        }
+
+        .img1 {
+            width: 50%;
+            height: 100%;
+            background-image: url('https://images.freeimages.com/images/large-previews/025/aurora-470633631-1638810.jpg');
+            background-size: cover;
+        }
+
+        .img1:hover {
+            background-image: url('https://images.freeimages.com/images/large-previews/bd7/falloxbow-1058032.jpg');
+            background-size: cover;
+        }
+
+        .text1 {
+            width: 50%;
+            height: 100%;
+            background-color: #d8e4cdd7;
+            padding-left: 10px;
+            letter-spacing: 2px;
+
+        }
+
+        .imgandtext2 {
+            width: 100%;
+            height: 100vh;
+            background-image: url('https://images.freeimages.com/images/large-previews/817/beautiful-alps-1638079.jpg');
+            background-size: cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            opacity: 0.8;
+            /* 遮罩 */
+
+        }
+
+        .text2 {
+            width: 20%;
+            height: 15%;
+            background-color: #1f0215;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 30%;
+            font-size: 2em;
+            color: rgb(102, 255, 0);
+            box-shadow: 3px 3px 5px 5px midnightblue;
+            text-shadow: 2px 3px 3px darkblue;
+            position: relative;
+            top: calc(50% / 2);
+        }
+
+        .imgandtext3 {
+            width: 100%;
+            height: 100vh;
+            background-image: url('https://www.stockvault.net/data/2009/01/15/107368/preview16.jpg');
+            background-size: cover;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            background-repeat: repeat;
+        }
+
+        .img3_left {
+            width: 25%;
+            height: 70%;
+        }
+
+        .img3_picl {
+            height: 50%;
+            background-image: url('https://s1.1zoom.me/big0/36/Dahlias_Closeup_Pink_color_571674_1280x850.jpg');
+            background-size: cover;
+        }
+
+        .img3_textl {
+            height: 50%;
+            background-color: #d8e4cdd7;
+            color: darkblue;
+            font-size: 2em;
+            text-shadow: 2px 2px 2px darkblue;
+            text-align: center;
+        }
+
+        .img3_middle {
+            width: 25%;
+            height: 70%;
+        }
+
+        .img3_picm {
+            height: 50%;
+            background-image: url('https://s1.1zoom.me/big0/214/Dahlias_Closeup_571566_1183x1024.jpg');
+            background-size: cover;
+        }
+
+        .img3_textm {
+            height: 50%;
+            background-color: #d8e4cdd7;
+            color: darkblue;
+            font-size: 2em;
+            text-shadow: 2px 2px 2px darkblue;
+            text-align: center;
+        }
+
+        .img3_right {
+            width: 25%;
+            height: 70%;
+        }
+
+        .img3_picr {
+            height: 50%;
+            background-image: url('https://s1.1zoom.me/big0/937/Peonies_Flower-bud_Pink_color_568558_1365x1024.jpg');
+            background-size: cover;
+        }
+
+        .img3_textr {
+            height: 50%;
+            background-color: #d8e4cdd7;
+            color: darkblue;
+            font-size: 2em;
+            text-shadow: 2px 2px 2px darkblue;
+            text-align: center;
+        }
+
+        .footer {
+            width: 100%;
+            height: 5%;
+            background-color: #015f6b6b;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            position: fixed;
+            bottom: 0;
+
+        }
+
+        @media screen and (max-width: 991px) {
+            .all {
+                width: 100%;
+                height: 100vh;
+                background-image: url('https://images.freeimages.com/images/large-previews/678/flying-seagulls-over-the-lake-1639263.jpg');
+                background-size: cover;
+                display: flex;
+                /* flex-wrap: wrap; */
+                justify-content: center;
+                background-repeat: repeat;
+            }
+
+            .navbar {
+                width: 100%;
+                height: 20%;
+                background-image: url('https://images.freeimages.com/images/large-previews/9a7/grey-brick-wall-1637659.jpg');
+                background-size: cover;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                position: fixed;
+                z-index: 6;
+            }
+
+            .logo {
+                width: 60px;
+                height: 60px;
+                background-image: url('https://image.flaticon.com/icons/png/512/2175/2175306.png');
+                background-size: cover;
+                margin-left: 10px;
+            }
+
+            nav ul li {
+                display: flex;
+            }
+
+            nav ul li a {
+                text-decoration: none;
+            }
+
+            .linkgroup {
+                /* width: 300px;
+                height: 50px; */
+                display: flex;
+                /* justify-content: space-between; */
+                align-items: center;
+                font-size: 2em;
+            }
+
+            .container {
+                width: 100%;
+                height: 75%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                position: relative;
+                top: 20%;
+            }
+
+            .imgandtext1 {
+                width: 80%;
+                height: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                margin-top: 0%;
+            }
+
+            .img1 {
+                width: 100%;
+                height: 50%;
+                background-image: url('https://images.freeimages.com/images/large-previews/025/aurora-470633631-1638810.jpg');
+                background-size: cover;
+            }
+
+            .img1:hover {
+                background-image: url('https://images.freeimages.com/images/large-previews/bd7/falloxbow-1058032.jpg');
+                background-size: cover;
+            }
+
+            .text1 {
+                width: 100%;
+                height: 50%;
+                background-color: #d8e4cdd7;
+                padding-left: 0;
+                letter-spacing: 2px;
+            }
+
+            .imgandtext2 {
+                width: 100%;
+                height: 100vh;
+                background-color: #e4c7af;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                opacity: 0.6;
+                /* 遮罩 */
+            }
+
+            .text2 {
+                width: 20%;
+                height: 20%;
+                background-color: #db9bb6;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                top: calc(50% / 2);
+                display: none;
+            }
+
+            .imgandtext3 {
+                width: 100%;
+                height: 100vh;
+                background-image: url('https://www.stockvault.net/data/2009/01/15/107368/preview16.jpg');
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                flex-wrap: wrap;
+                background-repeat: repeat;
+            }
+
+            .img3_left {
+                width: 75%;
+                height: 70%;
+            }
+
+            .img3_picl {
+                height: 50%;
+                background-image: url('https://s1.1zoom.me/big0/36/Dahlias_Closeup_Pink_color_571674_1280x850.jpg');
+                background-size: cover;
+            }
+
+            .img3_textl {
+                height: 50%;
+                background-color: #d8e4cdd7;
+                color: darkblue;
+                font-size: 2em;
+                text-shadow: 2px 2px 2px darkblue;
+                text-align: center;
+            }
+
+            .img3_middle {
+                width: 75%;
+                height: 70%;
+            }
+
+            .img3_picm {
+                height: 50%;
+                background-image: url('https://s1.1zoom.me/big0/214/Dahlias_Closeup_571566_1183x1024.jpg');
+                background-size: cover;
+            }
+
+            .img3_textm {
+                height: 50%;
+                background-color: #d8e4cdd7;
+                color: darkblue;
+                font-size: 2em;
+                text-shadow: 2px 2px 2px darkblue;
+                text-align: center;
+            }
+
+            .img3_right {
+                width: 75%;
+                height: 70%;
+            }
+
+            .img3_picr {
+                height: 50%;
+                background-image: url('https://s1.1zoom.me/big0/937/Peonies_Flower-bud_Pink_color_568558_1365x1024.jpg');
+                background-size: cover;
+            }
+
+            .img3_textr {
+                height: 50%;
+                background-color: #d8e4cdd7;
+                color: darkblue;
+                font-size: 2em;
+                text-shadow: 2px 2px 2px darkblue;
+                text-align: center;
+            }
+
+            .footer {
+                width: 100%;
+                height: 5%;
+                background-color: #015f6b6b;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                position: fixed;
+                bottom: 0;
+
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all">
+        <div class="navbar">
+            <div class="logo"></div>
+            <nav>
+                <div>
+                    <ul class="linkgroup">
+                        <li class="linkA"><a href="#section_1">linkA</href>
+                        </li>
+                        <li class="linkB"><a href="#section_2">linkB</href>
+                        </li>
+                        <li class="linkC"><a href="#section_3">linkC</href>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <div class="imgandtext1">
+                <div class="img1"></div>
+                <div class="text1">
+                    <span>1Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae explicabo officiis quis iste
+                        architecto. Cupiditate molestiae at nesciunt voluptates animi minima sint repellat laborum
+                        similique sit! Quod sapiente officia blanditiis?</span>
+                </div>
+            </div>
+            <div class="imgandtext2">
+                <div class="img2"></div>
+                <div class="text2">2Lorem dolor</div>
+            </div>
+            <div class="imgandtext3">
+                <div class="img3_left">
+                    <div class="img3_picl"></div>
+                    <div class="img3_textl">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hi</div>
+                </div>
+                <div class="img3_middle">
+                    <div class="img3_picm"></div>
+                    <div class="img3_textm">repellat laborum
+                        similique sit! Quod sapiente officia blanditiis</div>
+                </div>
+                <div class="img3_right">
+                    <div class="img3_picr"></div>
+                    <div class="img3_textr">ipsum dolor sit amet consectetur adipisicing elit</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <section id="section_1">
+        <div class="imgandtext1"></div>
+    </section>
+    <section id="section_2">
+        <div class="imgandtext2"></div>
+    </section>
+    <section id="section_3">
+        <div class="imgandtext3"></div>
+    </section>
+    <div class="footer">
+        <span>此頁面內容僅為全端與python資料探工程師養成班使用</span>
+    </div>
+
+    </div>
+</body>
+
+</html>

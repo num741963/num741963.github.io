@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+        }
+
+        @media screen and (max-width: 768px) {
+            .all {
+                width: 100%;
+                height: 100vh;
+                background-image: url('https://www.publicdomainpictures.net/pictures/260000/velka/fenetre-et-rideaux-blancs-.jpg');
+                background-size: cover;
+                display: flex;
+                flex-wrap: wrap;
+                flex-direction: row;
+            }
+
+            .left_up {
+                width: 100%;
+                height: 20vh;
+                background-size: cover;
+                display: flex;
+            }
+
+            .right_bt {
+                width: 100%;
+                height: 80vh;
+                display: flex;
+                flex-wrap: wrap;
+                align-content: center;
+            }
+
+            .logo {
+                width: 150px;
+                height: 150px;
+                background-size: cover;
+                position: relative;
+                left: -280px;
+            }
+
+            .menuicon {
+                widows: 0;
+                height: 0;
+            }
+
+            .menu {
+                display: flex;
+
+            }
+
+            ul li {
+                color: rgb(255, 112, 243);
+                text-shadow: 0.1em 0.1em 0.2em;
+                font-size: 2em;
+                font-family: 'Pacifico', cursive;
+                padding: 0 20px;
+                position: relative;
+                top: -120px;
+                left: 150px;
+
+            }
+
+            ul li:hover {
+                font-size: 3em;
+            }
+
+            .leftpic {
+                width: 70%;
+                height: 40%;
+            }
+
+            .leftpic:hover {
+                width: 73%;
+                height: 43%;
+                border-radius: 90%;
+            }
+
+            .middlepic {
+                width: 35%;
+                height: 40%;
+            }
+
+            .middlepic:hover {
+                width: 38%;
+                height: 43%;
+                border-radius: 90%;
+            }
+
+            .rightpic {
+                width: 35%;
+                height: 40%;
+            }
+
+            .rightpic:hover {
+                width: 38%;
+                height: 43%;
+                border-radius: 90%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="all">
+        <div class="left_up">
+            <div class="logo"></div>
+            <div class="menuicon">
+                <div class="menu">
+                    <ul>
+                        <li>Air</li>
+                        <li>Food</li>
+                        <li>Sleep</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="right_bt">
+            <div class="leftpic"></div>
+            <div class="middlepic"></div>
+            <div class="rightpic"></div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</body>
+
+</html>

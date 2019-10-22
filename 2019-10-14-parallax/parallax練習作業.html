@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>parallax練習作業</title>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Concert+One&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .mask {
+            width: 100%;
+            height: 100%;
+            background-color: rgb(255, 255, 255, 0.6);
+        }
+
+        .bn_index {
+            width: 100%;
+            height: 100vh;
+            background-image: url('https://cdn.pixabay.com/photo/2019/08/28/06/16/barbary-ape-4435927_960_720.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+
+        .index_title {
+            padding: 10px;
+            background-color: rgb(13, 13, 88);
+            color: white;
+            font-size: 2em;
+            font-family: 'Pacifico', cursive;
+            position: relative;
+            left: calc(50% - 160px);
+            top: calc(50% - 27px);
+            letter-spacing: 5px;
+        }
+
+        .bn_second {
+            width: 100%;
+            height: 100vh;
+            background-image: url('https://cdn.pixabay.com/photo/2019/03/27/16/26/animal-4085345_960_720.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .second_text {
+            padding: 3px;
+            background-color: rgb(221, 243, 193);
+            font-size: 1em;
+            font-family: 'Concert One', cursive;
+            position: relative;
+            letter-spacing: 1px;
+        }
+
+        .bn_third {
+            width: 100%;
+            height: 100vh;
+            background-image: url('https://cdn.pixabay.com/photo/2016/04/16/23/07/cat-1333926_960_720.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .third_text {
+            padding: 10px;
+            background-color: rgb(58, 5, 40);
+            color: white;
+            font-size: 2em;
+            font-family: 'Pacifico', cursive;
+            padding: 3% 10% 3% 10%;
+            letter-spacing: 25px;
+        }
+
+        .fouth_text {
+            padding: 10px;
+            color: rgb(0, 0, 0);
+            font-size: 5em;
+            font-family: 'Concert One', cursive;
+            position: relative;
+            top: 20%;
+            letter-spacing: 5px;
+        }
+
+        .bn_fifth {
+            width: 100%;
+            height: 100vh;
+            background-image: url('https://cdn.pixabay.com/photo/2015/09/22/14/34/african-lion-951778_960_720.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        .fifth_text {
+            background-color: rgb(4, 56, 36);
+            color: white;
+            font-size: 1em;
+            padding: 3% 10% 3% 10%;
+            letter-spacing: 2px;
+        }
+
+        .sixth_text1 {
+            padding: 10px 0px 20px 40px;
+            color: rgb(83, 8, 34);
+            font-size: 3em;
+            font-family: 'Concert One', cursive;
+            height: 1em;
+            position: relative;
+            top: 5%;
+            letter-spacing: 5px;
+        }
+
+        .sixth_text2 {
+            padding: 20px 0px 10px 140px;
+            color: rgb(83, 8, 34);
+            font-size: 3em;
+            font-family: 'Concert One', cursive;
+            height: 1em;
+            position: relative;
+            top: 1%;
+            letter-spacing: 5px;
+        }
+
+        .sixth_text3 {
+            padding: 0px 0px 0px 190px;
+            color: rgb(83, 8, 34);
+            font-size: 3em;
+            font-family: 'Concert One', cursive;
+            height: 1em;
+            position: relative;
+            top: 1%;
+            letter-spacing: 5px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <main>
+        <section id="bn_monkey">
+            <div class="bn_index">
+                <div class="mask">
+                    <span class="index_title">down down down</span>
+                </div>
+            </div>
+        </section>
+        <section id="bn_dog">
+            <div class="bn_second">
+                <div class="mask">
+                    <div class="second_text">Et tempora sint nam itaque modi iure facere hic consequuntur laboriosam
+                        doloremque voluptate officia, in perspiciatis harum reprehenderit temporibus magnam quasi!
+                        Deserunt nesciunt fugit in, laborum saepe illum repellendus neque assumenda animi velit corporis
+                        soluta, delectus suscipit et molestiae necessitatibus eos unde officia accusamus! Obcaecati,
+                        reprehenderit consectetur dolores doloribus dolor sit? Ad, quaerat dolore magni quia nisi illo
+                        aliquid officiis saepe voluptatum corporis!</div>
+                </div>
+            </div>
+        </section>
+        <section id="bn_cat">
+            <div class="bn_third">
+                <div class="mask">
+                    <div class="third_text">ball?</div>
+                    <div class="fouth_text">meow~ chu~</div>
+                </div>
+            </div>
+        </section>
+        <section id="bn_lion">
+            <div class="bn_fifth">
+
+                <div class="mask">
+                    <div class="fifth_text">
+                        臣亮言：先帝創業未半，而中道崩殂。今天下三分，益州疲弊，此誠危急存亡之秋也。然侍衛之臣，不懈於內；忠志之士，忘身於外者，蓋追先帝之殊遇，欲報之於陛下也。誠宜開張聖聽，以光先帝遺德，恢弘志士之氣；不宜妄自菲薄，引喻失義，以塞忠諫之路也。宮中府中，俱為一體，陟罰臧否，不宜異同。若有作姦犯科，及為忠善者，宜付有司，論其刑賞，以昭陛下平明之治，不宜篇私，使內外異法也。
+                    </div>
+                    <div class="sixth_text1">lion</div>
+                    <div class="sixth_text2">is</div>
+                    <div class="sixth_text3">king</div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

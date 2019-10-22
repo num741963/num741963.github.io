@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>切版練習</title>
+
+<style>
+*{
+    box-sizing:border-box; margin:0;
+}
+.all{
+    margin:0 auto;
+    width:70%;
+    height:800px;
+    background-color:black;
+    padding:10px;
+}
+.header{
+    width:100%;
+    height:30%;
+    background-color: lightcoral;
+    margin:0 0 10px 0;
+}
+.mainR{
+    width:100%;
+    height:calc(40% - 20px);
+    background-color:lightgreen;
+    margin:10px 0;
+}
+.bottom{
+    width:100%;
+    height:30%;
+    background-color:gold;
+}
+.mainL{
+    width:calc(30% - 10px);
+    height:100%;
+    background-color:blue;
+    float:left;
+    margin-right: 10px;
+}
+.mainR_top{
+    width:70%;
+    height:31%;
+    background-color:purple;
+    float:right;
+    margin-bottom: 10px;
+}
+.mainR_mid{
+    width:70%;
+    height:31%;
+    background-color:slategray;
+    float:right;
+    margin-bottom: 10px;
+}
+.mainR_btm{
+    width:70%;
+    height:31%;
+    background-color:yellow;
+    float:right;
+}
+</style>
+
+</head>
+<body>
+    <div class="all">
+            <div class="header"></div>
+            <div class="mainR">
+                <div class="mainL"></div>
+                <div class="mainR_top"></div>
+                <div class="mainR_mid"></div>
+                <div class="mainR_btm"></div>
+            </div>
+            <div class="bottom"></div>
+    </div>
+
+</body>
+</html>
