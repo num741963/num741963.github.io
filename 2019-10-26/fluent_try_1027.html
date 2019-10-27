@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>fulent仿刻練習1026</title>
-
+    <title>fluent_try_1027</title>
     <style>
         * {
             margin: 0;
@@ -19,65 +18,73 @@
         }
 
         .header {
-            width: 100vw;
+            width: 100%;
             height: 48px;
-            background-color: #777777;
+            background-color: #555555;
             display: flex;
             justify-content: center;
-            /* 水平置中 */
+            flex-wrap: wrap;
         }
 
         @media screen and (max-width: 1024px) {
             .header {
-                width: 100%;
+                width: 900px;
                 height: 48px;
+                background-color: #111111;
+
             }
         }
 
         @media screen and (max-width: 375px) {
             .header {
-                width: 100%;
+                width: 500px;
                 height: 48px;
+                background-color: #cccccc;
             }
         }
 
         .headermiddle {
-            width: 80%;
+            width: 1536px;
             height: 48px;
-            background-color: #555555;
+            background-color: #eee555;
             display: flex;
         }
 
         @media screen and (max-width: 1024px) {
             .headermiddle {
-                width: 60%;
+                width: 70%;
                 height: 48px;
+                background-color: #eee555;
+                display: flex;
             }
         }
 
         @media screen and (max-width: 375px) {
             .headermiddle {
-                width: 30%;
+                width: 40%;
                 height: 48px;
+                background-color: #eee555;
+                display: flex;
             }
         }
 
         .logo {
-            width: 189px;
+            widows: 189px;
             height: 48px;
-            background-color: #eeeeee;
+            background-color: #222999;
+            display: flex;
         }
 
         @media screen and (max-width: 1024px) {
             .logo {
-                width: 60px;
+                widows: 60px;
                 height: 48px;
             }
         }
 
         @media screen and (max-width: 375px) {
             .logo {
-                width: 48px;
+                widows: 48px;
                 height: 48px;
             }
         }
@@ -85,7 +92,7 @@
         .sitetitle {
             width: 156px;
             height: 48px;
-            background-color: #dddddd;
+            background-color: #b744c2;
         }
 
         @media screen and (max-width: 1024px) {
@@ -103,36 +110,33 @@
         }
 
         .sitetitle h1 {
-            color: brown;
+            color: white;
             font-size: 16px;
             line-height: 49px;
-            /* 文字高度 */
         }
 
         .navlist {
-            width: 70%;
+            width: 33%;
             height: 48px;
-            background-color: #ddd555;
-            padding: 0;
+            background-color: #777111;
         }
 
         @media screen and (max-width: 1024px) {
             .navlist {
-                width: 50%;
+                width: 33%;
                 height: 48px;
             }
         }
 
         @media screen and (max-width: 375px) {
             .navlist {
-                width: 30%;
+                width: 33%;
                 height: 48px;
                 display: none;
             }
         }
 
         ul {
-            width: 572px;
             height: 48px;
             display: flex;
             justify-content: space-between;
@@ -141,13 +145,9 @@
         ul li {
             height: 48px;
             background-color: #cccccc;
-            display: inline;
-            /* 水平且去除預設格式，會出錯 */
             line-height: 49px;
         }
     </style>
-
-
 </head>
 
 <body>
@@ -156,7 +156,8 @@
             <div class="headermiddle">
                 <div class="logo">
                     <div class="logoicon">
-                        <!-- <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Windows_logo_-_2012_derivative.svg/120px-Windows_logo_-_2012_derivative.svg.png" alt=""> -->
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/34/Windows_logo_-_2012_derivative.svg/120px-Windows_logo_-_2012_derivative.svg.png"
+                            alt="" style="width: 48px">
                     </div>
                 </div>
                 <div class="sitetitle">
@@ -171,6 +172,7 @@
                     </ul>
                 </div>
             </div>
+
         </div>
     </div>
 </body>
