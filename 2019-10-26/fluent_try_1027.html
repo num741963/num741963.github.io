@@ -15,39 +15,41 @@
             width: 100vw;
             height: 100vh;
             background-color: #999999;
+
         }
 
         .header {
             width: 100%;
             height: 48px;
-            background-color: #555555;
+            background-color: #b45b5b;
             display: flex;
             justify-content: center;
-            flex-wrap: wrap;
         }
 
         @media screen and (max-width: 1024px) {
             .header {
-                width: 900px;
+                width: 60%;
                 height: 48px;
-                background-color: #111111;
-
+                background-color: #6970d3;
+                margin-left: 80px;
             }
         }
 
         @media screen and (max-width: 375px) {
             .header {
-                width: 500px;
+                width: 20%;
                 height: 48px;
                 background-color: #cccccc;
+                margin-left: 0;
             }
         }
 
         .headermiddle {
-            width: 1536px;
+            width: 80%;
             height: 48px;
             background-color: #eee555;
             display: flex;
+
         }
 
         @media screen and (max-width: 1024px) {
@@ -61,7 +63,7 @@
 
         @media screen and (max-width: 375px) {
             .headermiddle {
-                width: 40%;
+                width: 20%;
                 height: 48px;
                 background-color: #eee555;
                 display: flex;
@@ -116,24 +118,35 @@
         }
 
         .navlist {
-            width: 33%;
+            width: 50%;
             height: 48px;
             background-color: #777111;
+            display: flex;
+            display: inline-block;
+            /* 水平分散 */
         }
 
         @media screen and (max-width: 1024px) {
             .navlist {
-                width: 33%;
                 height: 48px;
+                background-color: #777111;
+                display: flex;
+                justify-content: space-between;
             }
         }
 
         @media screen and (max-width: 375px) {
-            .navlist {
-                width: 33%;
-                height: 48px;
-                display: none;
+            .listicon {
+                width: 48px;
+                background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Bond_University_Breakers_colours.svg/128px-Bond_University_Breakers_colours.svg.png');
+                background-size: cover;
             }
+
+            .listhide {
+                opacity: 0;
+                pointer-events: none;
+            }
+
         }
 
         ul {
@@ -164,17 +177,33 @@
                     <h1>Fluent Design System</h1>
                 </div>
                 <div class="navlist">
-                    <ul>
-                        <li class="web">web</li>
-                        <li class="windows">windows</li>
-                        <li class="ios">ios</li>
-                        <li class="android">android</li>
-                    </ul>
+                    <div class="listicon">
+                        <div class="listhide">
+                            <ul>
+                                <li class="web">web</li>
+                                <li class="windows">windows</li>
+                                <li class="ios">ios</li>
+                                <li class="android">android</li>
+                            </ul>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
         </div>
     </div>
+
+    <script>
+        var listicon = document.querySelector('.listicon');
+        var listhide = document.querySelector('.listhide');
+
+        listicon.onclick = function () {
+            listhide.classList.toggle('.listhide');
+        }
+
+    </script>
+
 </body>
 
 </html>
