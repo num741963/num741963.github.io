@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        .menulist_hide {
+            opacity: 0;
+            pointer-events: none;
+            /* 選單隱藏且可穿透 */
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="menubar">
+        <div class="title">title
+            <div class="menulist_hide">
+                <ul>
+                    <li>web</li>
+                    <li>android</li>
+                    <li>ios</li>
+                </ul>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script>
+        var title = document.querySelector('.title');
+        var menulist_hide = document.querySelector('.menulist_hide');
+
+        title.onclick = function () {
+            menulist_hide.classList.toggle('menulist_hide');
+        }
+    </script>
+
+</body>
+
+</html>

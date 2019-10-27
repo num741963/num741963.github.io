@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fluent仿刻mobile</title>
+
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .ul_class {
+            float: right;
+            margin-right: 200px;
+        }
+
+        .ul_class>div {
+            display: inline;
+        }
+
+        .opacity_0 {
+            opacity: 0;
+        }
+
+        .ul_class div>div {
+            position: relative;
+            display: none;
+            left: -20px;
+            top: 50px;
+            display: inline-block;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="ul_class">
+        <div><a class="option" href="#">我是宗翰</a>
+            <div class="opacity_0">
+                <ul>
+                    <li><a href="#">帥1</a></li>
+                    <li><a href="#">帥2</a></li>
+                    <li><a href="#">帥3</a></li>
+                </ul>
+            </div>
+        </div>
+        <div><a class="option" href="#">我是阿均</a>
+            <div class="opacity_0">
+                <ul>
+                    <li><a href="#">美1</a></li>
+                    <li><a href="#">美2</a></li>
+                    <li><a href="#">美3</a></li>
+                </ul>
+            </div>
+        </div>
+        <div><a class="option" href="#">我是小蒼鼠</a>
+            <div class="opacity_0">
+                <ul>
+                    <li><a href="#">可愛1</a></li>
+                    <li><a href="#">可愛2</a></li>
+                    <li><a href="#">可愛3</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+
+        window.onload = function () {
+            // ()是方法
+            var doms = document.querySelectorAll(".option");
+            for (var i = 0; i < doms.length; i++) {
+                // i=0，i小於總數(此列總數為3)時，i就加1
+                doms[i].onclick = function () {
+                    // 選擇[i]有此屬性之元素，[]是陣列的第幾個
+                    // window['wtf'] = this;
+                    var o = this.closest("div").querySelectorAll("div");
+                    o[0].classList.toggle("opacity_0");
+                };
+            }
+        };
+
+    </script>
+
+</body>
+
+</html>

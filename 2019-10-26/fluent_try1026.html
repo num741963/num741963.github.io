@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>fulent仿刻練習1026</title>
+
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .all {
+            width: 100vw;
+            height: 100vh;
+            background-color: #999999;
+        }
+
+        .header {
+            width: 100vw;
+            height: 48px;
+            background-color: #777777;
+            display: flex;
+            justify-content: center;
+            /* 水平置中 */
+        }
+
+        @media screen and (max-width: 1024px) {
+            .header {
+                width: 100%;
+                height: 48px;
+            }
+        }
+
+        @media screen and (max-width: 375px) {
+            .header {
+                width: 100%;
+                height: 48px;
+            }
+        }
+
+        .headermiddle {
+            width: 80%;
+            height: 48px;
+            background-color: #555555;
+            display: flex;
+        }
+
+        @media screen and (max-width: 1024px) {
+            .headermiddle {
+                width: 60%;
+                height: 48px;
+            }
+        }
+
+        @media screen and (max-width: 375px) {
+            .headermiddle {
+                width: 30%;
+                height: 48px;
+            }
+        }
+
+        .logo {
+            width: 189px;
+            height: 48px;
+            background-color: #eeeeee;
+        }
+
+        @media screen and (max-width: 1024px) {
+            .logo {
+                width: 60px;
+                height: 48px;
+            }
+        }
+
+        @media screen and (max-width: 375px) {
+            .logo {
+                width: 48px;
+                height: 48px;
+            }
+        }
+
+        .sitetitle {
+            width: 156px;
+            height: 48px;
+            background-color: #dddddd;
+        }
+
+        @media screen and (max-width: 1024px) {
+            .sitetitle {
+                height: 48px;
+                flex: 0 0 auto;
+            }
+        }
+
+        @media screen and (max-width: 375px) {
+            .sitetitle {
+                height: 48px;
+                flex: 0 0 auto;
+            }
+        }
+
+        .sitetitle h1 {
+            color: brown;
+            font-size: 16px;
+            line-height: 49px;
+            /* 文字高度 */
+        }
+
+        .navlist {
+            width: 70%;
+            height: 48px;
+            background-color: #ddd555;
+            padding: 0;
+        }
+
+        @media screen and (max-width: 1024px) {
+            .navlist {
+                width: 50%;
+                height: 48px;
+            }
+        }
+
+        @media screen and (max-width: 375px) {
+            .navlist {
+                width: 30%;
+                height: 48px;
+                display: none;
+            }
+        }
+
+        ul {
+            width: 572px;
+            height: 48px;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        ul li {
+            height: 48px;
+            background-color: #cccccc;
+            display: inline;
+            /* 水平且去除預設格式 */
+            line-height: 49px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="all">
+        <div class="header">
+            <div class="headermiddle">
+                <div class="logo">
+                    <div class="logoicon">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/34/Windows_logo_-_2012_derivative.svg"
+                            alt="" ; height="48px">
+                    </div>
+                </div>
+                <div class="sitetitle">
+                    <h1>Fluent Design System</h1>
+                </div>
+                <div class="navlist">
+                    <ul>
+                        <li class="web">web</li>
+                        <li class="windows">windows</li>
+                        <li class="ios">ios</li>
+                        <li class="android">android</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
